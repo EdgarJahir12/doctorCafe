@@ -1,0 +1,87 @@
+<mat-sidenav-container>
+    <mat-sidenav-content>
+        <div class="col-md-12 mt-3 d-flex justify-content-center">
+            <div class="content mat-elevation-z8">
+               <div class="row">
+                    <div class="col-md-4 col-lg-4 ">
+                        <p class="background">
+                            <img alt="cafe" class="cafe mt-10" src="./../../../assets/img/logo dr. café.png">
+                        </p>
+                    </div>
+                    <div class="col-md-8 col-lg-8 mt-3">
+                        <h1 class="title">Bienvenido!</h1>
+                        <h3>Inicia sesión para poder acceder a todas nuestras funcionalidades</h3>
+                        <mat-tab-group>
+                            <mat-tab  class="text-color" label="Inicio de sesión">
+                                <p class="d-flex justify-content-center">
+                                    <mat-form-field id="#mi-componente" appearance="outline" class="texto-input" class="mt-5">
+                                      <mat-label class="texto-input">Correo Electronico</mat-label>
+                                      <input matInput class="texto-input" placeholder="Placeholder">
+                                      <mat-icon matPrefix>email</mat-icon>
+                                    </mat-form-field>
+                                </p>
+                                <p class="d-flex justify-content-center">
+                                    <mat-form-field appearance="outline" class="mt-1">
+                                      <mat-label class="texto-input">Contraseña</mat-label>
+                                      <input class="texto-input" matInput placeholder="Placeholder">
+                                      <mat-icon matPrefix>lock</mat-icon>
+                                    </mat-form-field>
+                                </p>
+                                <p class="d-flex justify-content-center mt-4">
+                                    <button type="button" class="btn btn-success btn-lg grande" (click)="login();">Iniciar Sesión</button>
+                                </p>
+                            </mat-tab>
+                            <mat-tab label="Registro">
+                                <p class="d-flex justify-content-center">
+                                <mat-form-field appearance="outline" class="mt-5">
+                                    <mat-label class="texto-input">Nombre</mat-label>
+                                    <input class="texto-input" matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>face</mat-icon>
+                                  </mat-form-field>
+                                  <mat-form-field appearance="outline" class="mt-5">
+                                    <mat-label class="texto-input">Apellidos</mat-label>
+                                    <input class="texto-input" matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>portrait</mat-icon>
+                                  </mat-form-field>
+                                </p>
+                                <p class="d-flex justify-content-center">
+                                  <mat-form-field appearance="outline" class="mt-2">
+                                    <mat-label class="texto-input">Fecha de nacimiento</mat-label>
+                                    <input class="texto-input" matInput [matDatepicker]="picker" placeholder="Selecciona una fecha de nacimiento">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                  </mat-form-field>
+                                  
+                                      <mat-form-field appearance="outline" class="mt-2">
+                                        <mat-label class="texto-input">Correo Electronico</mat-label>
+                                        <input class="texto-input" matInput placeholder="Placeholder">
+                                        <mat-icon class="texto-input" matSuffix>email</mat-icon>
+                                      </mat-form-field>
+                                    </p>
+                                    <p class="d-flex justify-content-center">
+                                        <mat-form-field appearance="outline" class="mt-2">
+                                        <mat-label class="texto-input">Contraseña</mat-label>
+                                        <input class="texto-input" matInput [type]="hide ? 'password' : 'text'">
+                                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                        </button>
+                                        </mat-form-field>
+                                        <mat-form-field appearance="outline" class="mt-2">
+                                            <mat-label class="texto-input">Confirmar contraseña</mat-label>
+                                            <input class="texto-input" matInput [type]="hide2 ? 'password' : 'text'">
+                                            <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
+                                              <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                            </button>
+                                            </mat-form-field>
+                                        </p>
+                                        <p class="d-flex justify-content-center mt-4">
+                                            <button class="btn btn-success btn-lg grande">Registrarme</button>
+                                        </p>
+                            </mat-tab>
+                          </mat-tab-group>
+                    </div>
+               </div>
+            </div>
+        </div> 
+    </mat-sidenav-content>
+</mat-sidenav-container>

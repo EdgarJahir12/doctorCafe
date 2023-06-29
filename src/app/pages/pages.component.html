@@ -1,0 +1,58 @@
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+          menu
+        </mat-icon> 
+        <mat-icon *ngIf="sidenav.opened">
+          close
+        </mat-icon>
+    </button>
+    <h2>DoctorCafe</h2>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z18" mode="side" opened>
+      <img class="avatar mat-elevation-z18" width="30%" src="https://ionicframework.com/docs/img/demos/avatar.svg">
+      <h4 class="name">Alonso Nava</h4>
+      <p class="rol">Caficultor</p>
+      
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span><a [routerLink]="['user/user']">Inicio</a></span>
+      </button>
+      
+      <button mat-button class="menu-button" (click)="toggleCafetos()">
+        <mat-icon>person</mat-icon>
+        <span>Cafetos</span>
+        <mat-icon class="expand-icon">{{ isCafetosExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+      </button>
+      
+      <div class="menu-button" *ngIf="isCafetosExpanded">
+        <button mat-button class="sub-menu-button">
+          <span><a [routerLink]="['user/CafetoArabica']">Arabica</a></span>
+        </button>
+        <button mat-button class="sub-menu-button">
+          <span><a [routerLink]="['user/CafetoRobusta']">Robusta</a></span>
+        </button>
+      </div>
+      
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span><a [routerLink]="['user/userCreate']">Ver más</a></span>
+      </button>
+      
+      <mat-divider></mat-divider>
+      
+      <button mat-button class="menu-button">
+        <mat-icon>logout</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z18">
+        <router-outlet></router-outlet>
+      </div>
+  
+    </mat-sidenav-content>
+    
+  </mat-sidenav-container>

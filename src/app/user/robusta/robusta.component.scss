@@ -1,0 +1,47 @@
+mat-card-content{
+    color: black;
+    width: 500px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+mat-card{
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.contenido-card{
+    font-size: 15px;
+}
+.titulo-card{
+    font-weight: bold;
+} 
+
+.imagen-card{
+    width: 160px;
+    border-radius: 30px;
+    margin-left: 35px;
+}
+
+.bajo{
+    color: green;
+    font-weight: bold;
+}
+
+.alto{
+    color: red;
+    font-weight: bold;
+}
+
+.medio{
+    color: rgb(209, 209, 0);
+    font-weight: bold;
+}
+
+.ver-mas{
+    font-weight: 10px;
+}
+
+.titulo-card{
+    font-size: 15px;
+}
