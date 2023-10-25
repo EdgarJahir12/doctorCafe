@@ -7,12 +7,18 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { RobustaComponent } from './robusta/robusta.component';
 import { ArabicaComponent } from './arabica/arabica.component';
 import { VerArabicaComponent } from './ver-arabica/ver-arabica.component';
+import { FincasComponent } from './fincas/fincas.component';
+import { CafetosComponent } from './cafetos/cafetos.component';
+import { HojasComponent } from './hojas/hojas.component';
 
 const routes: Routes = [
-  {path:'user', component: UserListComponent},
+  {path:'user/:idUsuario', component: UserListComponent},
   {path: 'userCreate',component: UserCreateComponent},
-  {path: 'userEdit/:id', component: UserEditComponent},
-  {path: 'userDetails/id', component: UserDetailsComponent},
+  {path: 'userEdit/:idUsuario', component: UserEditComponent},
+  { path: 'fincas/:idUsuario', component: FincasComponent }, // Ruta para la información de fincas
+  {path: 'userDetails/:idUsuario', component: UserDetailsComponent},
+  {path: 'cafetos/:idFinca', component: CafetosComponent},
+  {path: 'hojas/:idCafeto', component: HojasComponent},
   {path: 'CafetoRobusta', component: RobustaComponent},
   {path: 'CafetoArabica', component: ArabicaComponent},
   {path: 'VerDetallesArabica', component: VerArabicaComponent}

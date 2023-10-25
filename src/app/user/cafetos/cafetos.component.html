@@ -1,0 +1,47 @@
+<div class="content mt-4">
+    <div class="row">
+      <div style="width: 16rem" *ngFor="let cafeto of cafetosFiltrados" (click)="redirigirAHojas">
+        <div class="card"style="width: 10rem" >
+          <div class="card-body" >
+            <img src="../../../assets/img/robusta.jpg" alt="Imagen" class="imagen-card"/>
+            <h3 class="titulo-card">Tipo de cafeto</h3>
+            <p class="contenido-card">{{ cafeto.especieCafe }}</p>
+            <h3 class="titulo-card">Nivel de infección</h3>
+            <p class="contenido-card">{{ cafeto.porcentajeInfeccion }}%</p>
+            <button type="button" class="btn btn-success buttonEdit" (click)="redirigirAHojas(cafeto.idCafeto)">Ver más</button>
+
+            <!-- Aquí colocas la estructura y contenido de cada card de cafeto -->
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- <div class="container">
+    <div class="row justify-content-center mt-5">
+        <mat-card>
+            <div class="col-md-4 col-lg-4 mt-3">
+                <mat-card-content>
+                    <div class="row" *ngFor="let cafeto of cafetos">
+                        <div class="col-md-4 col-lg-4">
+                            <img src="../../../assets/img/robusta.jpg" alt="Imagen" class="imagen-card" />
+                        </div>
+                        <div class="col-md-5 col-lg-5 d-flex justify-content-center">
+                            <div class="info-card">
+                                <h4 class="titulo-card">Número de registro</h4>
+                                <p class="contenido-card">{{cafeto.idCafeto}}</p>
+                                <h3 class="titulo-card">Fecha de registro</h3>
+                                <p class="contenido-card">2023-06-26</p>
+                                <h3 class="titulo-card">Nivel de infección</h3>
+                                <p class="contenido-card bajo">20% Bajo</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </div>
+        </mat-card>
+    </div>
+</div> -->

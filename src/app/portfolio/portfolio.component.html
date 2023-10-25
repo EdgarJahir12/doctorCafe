@@ -1,0 +1,213 @@
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a routerLink="/home" class="logo">
+        <img src="assets/images/logo_dr._café sin fondo.png" width="60" height="28" alt="Jassa home">
+      </a>
+
+      <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a routerLink="/home" class="label-lg navbar-link has-after" routerLinkActive="active">Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a routerLink="/service"  class="label-lg navbar-link has-after" routerLinkActive="active">Nosotros</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contactanos</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a routerLink="/login" class="btn btn-primary">Iniciar Sesion</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+<main>
+    <article>
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="portfolio-label">Nuestra App</h2>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <div class="portfolio-card">
+
+                <div style="display: flex; align-items: center; justify-content: center; height: 226px;">
+                  <img src="./assets/images/Bienvenido.png" loading="lazy" alt="Website Design for Marketing Agency Startup" style="height: 300px; width: auto; border: 1px solid #959e8d;">
+                  <img src="./assets/images/Bienvenido.png" loading="lazy" alt="Bienvenido Image 2" style="height: 300px; width: auto; border: 1px solid #959e8d;">
+                  <img src="./assets/images/Bienvenido.png" loading="lazy" alt="Bienvenido Image 3" style="height: 300px; width: auto; border: 1px solid #959e8d;">
+                </div>
+                
+                
+                
+                
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Web Design</span>
+
+                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
+
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                    websites, web services and online stores
+                  </p>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                  <img src="./assets/images/portfolio-2.jpg" width="800" height="540" loading="lazy"
+                    alt="Website Design for Marketing Agency Startup" class="img-cover">
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Web Design</span>
+
+                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
+
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                    websites, web services and online stores
+                  </p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                  <img src="./assets/images/portfolio-3.jpg" width="800" height="540" loading="lazy"
+                    alt="Website Design for Marketing Agency Startup" class="img-cover">
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Web Design</span>
+
+                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
+
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                    websites, web services and online stores
+                  </p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                  <img src="./assets/images/portfolio-4.jpg" width="800" height="540" loading="lazy"
+                    alt="Website Design for Marketing Agency Startup" class="img-cover">
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Web Design</span>
+
+                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
+
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                    websites, web services and online stores
+                  </p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">Copyright &copy; 2023 - Desarrollado por Dr. Café.</p>
+
+    </div>
+  </footer>

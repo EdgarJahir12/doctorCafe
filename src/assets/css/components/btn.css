@@ -1,0 +1,49 @@
+/*-----------------------------------*\
+  #btn.css
+\*-----------------------------------*/
+
+/**
+ * 
+ */
+
+
+
+
+
+.btn {
+  background-color: #4F5E41 !important;
+  font-size: var(--fs-14)!important;
+  font-weight: var(--fw-500)!important;
+  text-transform: uppercase!important;
+  max-width: max-content!important;
+  letter-spacing: 2px!important;
+  border-color: #4F5E41 !important;
+  padding: 10px 22px!important;
+  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet))!important;
+  transition: var(--transition-1)!important;
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--jet)) !important;
+  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, #4F5E41) !important;
+}
+
+.btn-primary,
+.btn-secondary { color: var(--white)!important; }
+
+.btn-secondary {
+  background-color: var(--jet)!important;
+  --shadow-color: #4F5E41!important;
+  --hover-bg: #4F5E41!important;
+  --hover-shadow-color: var(--jet)!important;
+}
+
+.btn-tertiary {
+  color: var(--jet)!important;
+  background-color: #959e8d!important;
+  --shadow-color: #4F5E41!important;
+  --hover-bg: #4F5E41!important;
+  --hover-shadow-color: #959e8d!important;
+}
+
+.btn-tertiary:is(:hover, :focus-visible) { color: var(--white)!important; }

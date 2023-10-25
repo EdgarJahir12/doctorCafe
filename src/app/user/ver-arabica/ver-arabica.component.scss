@@ -1,8 +1,46 @@
 .img{
-    width: 160px;
+    width: 170px;
     border-radius: 30px;
     align-items: center;
     text-align: center;
     display: flex;
-    margin-left: 600px;
+    margin-left: 35%;
 }
+
+.card-center{
+    align-items: center;
+    margin-left: 430px;
+    width: 500px;
+    background-color: white;
+    color: black;
+}
+
+.texto-centrado{
+    width: 600px;
+    margin-left: 400px;
+}
+
+.titulo-card{
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+    color: black;
+}
+
+.contenido-card{
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+    color: black;
+}
+
+.background{
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.bajo{
+        color: green;
+        font-weight: bold;
+    }

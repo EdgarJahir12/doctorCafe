@@ -10,6 +10,13 @@ import { ArabicaComponent } from './arabica/arabica.component';
 import {MatCardModule} from '@angular/material/card';
 import { NgChartsModule } from 'ng2-charts';
 import { VerArabicaComponent } from './ver-arabica/ver-arabica.component';
+import { UserIndexComponent } from './user-index/user-index.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FincasComponent } from './fincas/fincas.component';
+import { CafetosComponent } from './cafetos/cafetos.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { HojasComponent } from './hojas/hojas.component';
+
 
 
 
@@ -24,14 +31,22 @@ import { VerArabicaComponent } from './ver-arabica/ver-arabica.component';
     RobustaComponent,
     ArabicaComponent,
     VerArabicaComponent,
+    UserIndexComponent,
+    FincasComponent,
+    CafetosComponent,
+    HojasComponent,
     
     
   ],
   imports: [
     CommonModule,
+    MatChipsModule,
     UserRoutingModule,
     MatCardModule,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule,
+    
+
   ]
 })
 export class UserModule { }

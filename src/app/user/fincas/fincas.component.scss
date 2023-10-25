@@ -1,0 +1,29 @@
+
+
+  
+  .card {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    height: 30rem;
+  }
+  
+
+
+  .card-title {
+    font-weight: bold;
+  }
+
+.imagen-card{
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 3%;
+}
+.card-body{
+  align-items: center;
+}
+  /* .col-md-4, .col-lg-4{
+    margin-left: 2%;
+  } */

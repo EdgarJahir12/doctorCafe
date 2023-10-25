@@ -1,0 +1,41 @@
+.container {
+    margin: 20px;
+  }
+  
+  .hoja-card {
+    background-color: whitesmoke;
+    width: 200px; /* Ancho de la tarjeta */
+    height: 190px; /* Alto de la tarjeta */
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .card-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+  }
+  
+  .hoja-imagen {
+    width: 40%;
+    border-radius: 20%;
+    height: auto;
+  }
+  
+  .info-container {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .id-hoja {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .porcentaje-infeccion {
+    font-size: 16px;
+    color: rgb(0, 0, 0); /* Color para el porcentaje de infección */
+  }
+  

@@ -9,6 +9,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,7 +29,8 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatDividerModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
     
   ]
 })

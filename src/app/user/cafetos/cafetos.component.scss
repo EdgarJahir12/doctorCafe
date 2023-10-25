@@ -1,0 +1,73 @@
+mat-card-content{
+    color: black;
+    border-radius: 10px;
+    align-items: center --force;
+}
+mat-card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    align-items: center --force;
+}
+
+
+.contenido-card{
+    align-items: center;
+
+    font-size: 15px;
+}
+.titulo-card{
+    font-weight: bold;
+} 
+
+.imagen-card{
+    width: 75%;
+    margin-top: 1%;
+    margin-left: 11%;
+    border-radius: 20%;
+}
+
+.bajo{
+    color: green;
+    font-weight: bold;
+}
+.mat-mdc-card {
+    position: relative;
+    width: 60%!important;
+}
+
+.alto{
+    color: red;
+    font-weight: bold;
+}
+
+.medio{
+    color: rgb(209, 209, 0);
+    font-weight: bold;
+}
+
+.ver-mas{
+    font-weight: 10px;
+}
+
+.titulo-card{
+    font-size: 15px;
+}
+/* Estilo básico para los chips */
+.mat-chip {
+    margin: 5px;
+  }
+
+  .selected-chip {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .card {
+    
+    align-items: center;
+    height: 22rem;
+  }
+
+  .buttonEdit{
+    margin-left: 15%;
+  }

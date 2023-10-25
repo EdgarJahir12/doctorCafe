@@ -8,6 +8,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PagesModule } from './pages/pages.module';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import {IonicModule} from '@ionic/angular';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -15,6 +22,11 @@ import { AuthModule } from './auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+    PortfolioComponent,
    
   ],
   imports: [
@@ -25,7 +37,11 @@ import { AuthModule } from './auth/auth.module';
     PagesModule,
     UserModule,
     AuthModule,
-
+    FormsModule,
+    ReactiveFormsModule,
+    IonicModule,
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

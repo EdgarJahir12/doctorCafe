@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let hoja of hojas">
+      <mat-card class="hoja-card">
+        <mat-card-header>
+          <div class="card-image-container">
+            <img src="../../../assets/img/robusta.jpg" alt="Hoja" class="hoja-imagen mt-4" />
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="info-container">
+            <p class="id-hoja">Id Hoja: {{ hoja.idHoja }}</p>
+            <p class="porcentaje-infeccion">Infección {{ hoja.porcentajeInfeccion }}%</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

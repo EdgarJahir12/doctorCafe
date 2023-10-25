@@ -1,0 +1,573 @@
+<!-- 
+  - #HEADER
+-->
+
+<header class="header">
+
+  <div class="header-top">
+    <div class="container">
+
+      <ul class="contact-list">
+
+        <li class="contact-item">
+          <ion-icon name="mail-outline"></ion-icon>
+
+          <a href="mailto:drcafe@mail.com" class="contact-link">drcafe@mail.com</a>
+        </li>
+
+        <li class="contact-item">
+          <ion-icon name="call-outline"></ion-icon>
+
+          <a href="tel:+000000000" class="contact-link">+52 273 101 76 32</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="header-bottom" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">Dr. Café.</a>
+
+      <nav class="navbar container" data-navbar [ngClass]="status ? 'active' : ''">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Sobre nosotros</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" routerLink="/login" class="btn">Iniciar Sesion</a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler (click)="addToggle()">
+        <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </div>
+
+</header>
+
+<main>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home" style="background-image: url('assets/images/hero-bg.png')"
+      aria-label="hero">
+      <div class="container">
+
+        <div class="hero-content">
+
+          <p class="section-subtitle">DESCUBRE EL FUTURO DEL CAFÉ CON</p>
+
+          <h1 class="h1 hero-title">Dr. Café</h1>
+
+          <p class="hero-text ">
+            En un mundo donde la roya amenaza la producción de café, hemos creado la solución definitiva: Dr. Café. Nuestra aplicación móvil revolucionaria está diseñada para enfrentar los desafíos de la industria cafetalera y llevarla hacia un futuro más brillante.
+          </p>
+
+          <form action="" class="hero-form">
+            <input type="email" name="email_address" aria-label="email" placeholder="Su dirección de correo electrónico..." required
+              class="email-field">
+
+            <button type="submit" class="btn">Llamada de vuelta</button>
+          </form>
+
+        </div>
+
+        <figure class="hero-banner">
+          <img src="assets/images/logo_dr._café sin fondo.png" width="587" height="839" alt="hero banner" class="w-100">
+        </figure>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #SERVICE
+    -->
+
+    <section class="section service" id="service" aria-label="service">
+      <div class="container">
+
+        <p class="section-subtitle text-center">Componentes</p>
+
+        <h2 class="h2 section-title text-center">Estrategicos de la empresa</h2>
+
+        <ul class="service-list">
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores1.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Mision</h3>
+
+                <p class="card-text justified-textLP">
+                  Nuestra misión es empoderar a los productores de café con tecnología para enfrentar la roya y prosperar.              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores2.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Vision</h3>
+
+                <p class="card-text justified-text">
+                  Aspiramos a liderar la lucha contra la roya y avanzar hacia una caficultura más resiliente y ecológica.              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores3.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Valores</h3>
+
+                <p class="card-text">
+                  Nos guían la innovación, la sostenibilidad y la pasión por preservar la industria cafetalera.              </div>
+
+            </div>
+          </li>
+
+          <li class="service-banner">
+            <figure>
+              <img src="assets/images/3.png" width="409" height="467" loading="lazy"
+                alt="service banner" class="w-100">
+            </figure>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores4.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Propuesta de Valor</h3>
+
+                <p class="card-text">
+                  Ofrecemos detección precisa, tratamientos inteligentes y pronósticos basados en datos para proteger cultivos.              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores5.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Objetivos y Metas</h3>
+
+                <p class="card-text">
+                  Buscamos mejorar la productividad, reducir pérdidas y promover prácticas sostenibles en la caficultura.              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/valores6.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Segmento del Mercado</h3>
+
+                <p class="card-text">
+                  Nuestro mercado objetivo incluye a productores de café preocupados por la roya y su impacto.              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #ABOUT
+    -->
+
+    <section class="section about" id="about" aria-label="about">
+      <div class="container">
+
+        <figure class="about-banner">
+          <img src="assets/images/cafe2.png" width="470" height="538" loading="lazy" alt="about banner"
+            class="w-100">
+        </figure>
+
+        <div class="about-content">
+
+          <p class="section-subtitle">Detección Precisa y Avanzada.</p>
+
+
+          <p class="section-text section-text-1">
+            Imagina poder identificar la roya en sus primeras etapas. Con la inteligencia artificial y la tecnología de detección de imágenes de Doctor Café, puedes hacerlo realidad. Analiza tus plantas de café con precisión científica y actúa a tiempo para prevenir pérdidas.  </p>
+          
+            <p class="section-subtitle">Tratamiento y Prevención Inteligentes.</p>
+
+
+          <p class="section-text">
+            No solo te decimos qué está mal, sino cómo solucionarlo. Nuestra aplicación no solo diagnostica la roya, sino que también proporciona recomendaciones de tratamiento y prevención personalizadas. Mantén tus cultivos sanos y productivos con estrategias respaldadas por la última tecnología.   </p>
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section about" id="about" aria-label="about">
+      <div class="container">
+
+        <figure class="about-banner">
+          <img src="assets/images/cafe3.png" width="470" height="538" loading="lazy" alt="about banner"
+            class="w-100">
+        </figure>
+
+        <div class="about-content">
+
+          <p class="section-subtitle">Pronósticos Basados en Datos.</p>
+
+
+          <p class="section-text section-text-1">
+            ¿Quieres adelantarte a la propagación de la roya? Doctor Café va más allá al ofrecer análisis predictivos basados en datos históricos y condiciones ambientales. Toma decisiones informadas sobre cuándo y cómo actuar, salvaguardando tu inversión y cosechas futuras.          
+            <p class="section-subtitle">La Revolución del Café.</p>
+
+
+          <p class="section-text">
+            Doctor Café no es solo una aplicación, es una revolución en la caficultura. A través del aprendizaje profundo y la inteligencia artificial, estamos transformando la manera en que se manejan las plagas en las plantaciones de café. Contribuye a una agricultura más sostenible y a la preservación del medio ambiente.
+
+        </div>
+
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+
+
+    <!-- 
+      - #DOCTOR
+    -->
+
+    
+
+
+
+
+
+    <!-- 
+      - #CTA
+    -->
+
+    <section class="section cta" aria-label="cta">
+      <div class="container">
+
+        <figure class="cta-banner">
+          <img src="assets/images/cafe4.png" width="1056" height="1076" loading="lazy" alt="cta banner"
+            class="w-100">
+        </figure>
+
+        <div class="cta-content">
+
+          <p class="section-subtitle">¡Únete a la revolución del café con Doctor Café!</p>
+
+          <h2 class="h2 section-title">Da el paso e una caficultura más inteligente, eficiente y sostenible.</h2>
+
+          <a href="#" class="btn">RESERVAR UNA CITA</a>
+
+        </div>
+
+      </div>
+    </section>
+    
+
+
+
+
+
+    <!-- 
+      - #BLOG
+    -->
+
+    <section class="section about" id="about" aria-label="about">
+      <div class="container">
+
+        <figure class="about-banner">
+          <img src="assets/images/cafe3.png" width="470" height="538" loading="lazy" alt="about banner"
+            class="w-100">
+        </figure>
+
+        <div class="about-content">
+
+          <p class="section-subtitle">Doctor Café no es solo una aplicación, es una revolución en la caficultura.</p>
+
+
+          <p class="section-text section-text-1">
+            Es una revolución en la caficultura. Estamos transformando la manera en que se manejan las plagas en las plantaciones de café, contribuyendo a una agricultura más sostenible y a la preservación del medio ambiente.           
+             <p class="section-subtitle">Doctor Café es tu aliado.</p>
+
+
+          <p class="section-text">
+            Únete a nosotros en esta misión para proteger y revitalizar la industria del café. Juntos, podemos lograr un futuro más brillante y sostenible para el café en todo el mundo.
+        </div>
+
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </article>
+</main>
+
+
+
+
+
+<!-- 
+  - #FOOTER
+-->
+
+<footer class="footer">
+
+  <div class="footer-top section">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">Doctor Cafe.</a>
+
+        <p class="footer-text">
+          En un momento en que la roya amenaza la producción de café en todo el mundo, hemos dado un paso adelante y hemos creado la solución definitiva: Dr. Café.
+        </p>
+
+        <div class="schedule">
+          <div class="schedule-icon">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+
+          <span class="span">
+            Lunes - Sabado:<br>
+            9:00am - 10:00Pm
+          </span>
+        </div>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Otros Links</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Inicio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Servicios</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Sobre Nosotros</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Blog</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Contacto</span>
+          </a>
+        </li>
+
+        
+
+      </ul>
+
+      
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Contacta con nosotros</p>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <address class="item-text">
+            Orizaba,<br>
+            Veracruz
+          </address>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <a href="tel:+000000000" class="footer-link">+52 273 101 76 32</a>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <a href="mailto:help@example.com" class="footer-link">drcafe@mail.com</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2023 Todos los derechos reservados por Dr Cafe.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
